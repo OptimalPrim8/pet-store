@@ -1,7 +1,5 @@
 package pet.store.entity;
 
-import java.util.Set;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,14 +15,21 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String employeeName; 
-    private String employeePhone;
-    private String employeeAddress;
-    
-    
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "pet_store_id") // Relationship variable
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private PetStore petStore;
+
+
+	public Long getEmployeeId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public String getEmployeeName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
