@@ -35,17 +35,13 @@ public class PetStoreData {
         }
     }
 
-    @Data
+
     @NoArgsConstructor
     public static class PetStoreCustomer {
-        private Long customerId; // Corrected variable name
-        private String customerName; // Corrected variable name
-        private String customerAddress; // Corrected variable name
-
         public PetStoreCustomer(Customer customer) {
-            this.customerId = customer.getId();
-            this.customerName = customer.getCustomerName();
-            this.customerAddress = customer.getCustomerAddress(); // Assuming you have this method
+            customer.getId();
+            customer.getCustomerName();
+            customer.getCustomerAddress();
         }
     }
 
@@ -59,5 +55,17 @@ public class PetStoreData {
             this.employeeId = employee.getEmployeeId();
             this.employeeName = employee.getEmployeeName();
         }
+
+		public Object getEmployeeFirstName() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public Object getEmployeeAddress() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+	
     }
 }

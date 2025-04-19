@@ -32,4 +32,22 @@ public class Employee {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	public void setEmployeeId(Long employeeId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setEmployeeName(String employeeName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void setEmployeeAddress(Object employeeAddress) {
+		// TODO Auto-generated method stub
+		
+	}
 }

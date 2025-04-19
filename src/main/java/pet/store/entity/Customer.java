@@ -22,8 +22,7 @@ public class Customer {
 	    private Long id;
 
 	    private String customerName;
-	    private String customerEmail; 
-	    private String customerPhone;
+	    private String customerId; 
 	    private String customerAddress;
 	    
 	    
@@ -31,4 +30,16 @@ public class Customer {
 	    @EqualsAndHashCode.Exclude
 	    @ToString.Exclude
 	    private Set<PetStore> petStores;
-}
+
+
+
+			
+		
+
+
+
+
+
+			
+		}
+
